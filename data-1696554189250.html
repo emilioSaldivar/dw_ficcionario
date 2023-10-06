@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Liberation Sans"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+		body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+	</style>
+	
+</head>
+
+<body>
+	<h1>Diccionario</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tabla</th>
+                <th>Columna</th>
+                <th>Defecto</th>
+                <th>Nulo</th>
+                <th>Tipo de Dato</th>
+                <th>Longitud</th>
+                <th>Descripción</th>
+                <th>Dominio</th>
+            </tr>
+        </thead>
+        <tbody>
+<table cellspacing="0" border="0">
+	<colgroup width="127"></colgroup>
+	<colgroup width="195"></colgroup>
+	<colgroup width="114"></colgroup>
+	<colgroup width="94"></colgroup>
+	<colgroup width="124"></colgroup>
+	<colgroup width="116"></colgroup>
+	<colgroup width="457"></colgroup>
+	<colgroup width="116"></colgroup>
+	<tr>
+		<td height="17" align="left">dim_city</td>
+		<td align="left">id_neighbourhood_group</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="200" sdnum="15370;">200</td>
+		<td align="left">Clave única del grupo de vecindarios o ciudad (Neighbourhood Group ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_city</td>
+		<td align="left">neighbourhood_group</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="255" sdnum="15370;">255</td>
+		<td align="left">Nombre del grupo de vecindarios o ciudad.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_coordinates</td>
+		<td align="left">id_coordinates</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única de coordenadas (Coordinates ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_coordinates</td>
+		<td align="left">latitude</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Latitud de las coordenadas.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_coordinates</td>
+		<td align="left">longitude</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Longitud de las coordenadas.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_feature</td>
+		<td align="left">id</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única de la característica (Feature ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_feature</td>
+		<td align="left">name</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="255" sdnum="15370;">255</td>
+		<td align="left">Nombre de la característica del hostal.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_host</td>
+		<td align="left">host_id</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única del anfitrión (Host ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_host</td>
+		<td align="left">host_id</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_host</td>
+		<td align="left">host_name</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="50" sdnum="15370;">50</td>
+		<td align="left">Nombre del anfitrión del hostal.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_host</td>
+		<td align="left">host_name</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="50" sdnum="15370;">50</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_neighbourhood</td>
+		<td align="left">id_neighbourhood</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única del barrio (Neighbourhood ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_neighbourhood</td>
+		<td align="left">neighbourhood</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="200" sdnum="15370;">200</td>
+		<td align="left">Nombre del barrio o vecindario.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_room</td>
+		<td align="left">id_room</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única de la habitación (Room ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_room</td>
+		<td align="left">id_room</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_room</td>
+		<td align="left">room_type</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="200" sdnum="15370;">200</td>
+		<td align="left">Tipo de habitación en el hostal.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_room</td>
+		<td align="left">room_type</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="200" sdnum="15370;">200</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">date_key</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">Clave de fecha (Date Key) única utilizada para unir con la tabla de hechos.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">date_key</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">day_abbrev</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="3" sdnum="15370;">3</td>
+		<td align="left">Abreviatura del día.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">day_abbrev</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="3" sdnum="15370;">3</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">day_name</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="20" sdnum="15370;">20</td>
+		<td align="left">Nombre del día.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">day_name</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="20" sdnum="15370;">20</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">day_num_in_month</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Número de día en el mes.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">day_num_in_month</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">day_num_overall</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Número de día en general.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">day_num_overall</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">day_of_week</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="20" sdnum="15370;">20</td>
+		<td align="left">Día de la semana.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">day_of_week</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="20" sdnum="15370;">20</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">fiscal_month</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Mes fiscal.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">fiscal_month</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">fiscal_quarter</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Trimestre fiscal.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">fiscal_quarter</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">fiscal_year</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Año fiscal.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">fiscal_year</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">full_date</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">Fecha completa.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">full_date</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">month</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="20" sdnum="15370;">20</td>
+		<td align="left">Mes.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">month</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="20" sdnum="15370;">20</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">month_abbrev</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="3" sdnum="15370;">3</td>
+		<td align="left">Abreviatura del mes.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">month_abbrev</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="3" sdnum="15370;">3</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">month_end_flag</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">bit</td>
+		<td align="right" sdval="1" sdnum="15370;">1</td>
+		<td align="left">Bandera de fin de mes (1 si es fin de mes, 0 si no lo es).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">month_end_flag</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">bit</td>
+		<td align="right" sdval="1" sdnum="15370;">1</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">month_name</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="20" sdnum="15370;">20</td>
+		<td align="left">Nombre del mes.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">month_name</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="20" sdnum="15370;">20</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">month_num_overall</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Número de mes en general.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">month_num_overall</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">quarter</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Trimestre.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">quarter</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">same_day_year_ago</td>
+		<td align="left">NULL</td>
+		<td align="left">YES</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">Fecha del mismo día del año anterior.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">same_day_year_ago</td>
+		<td align="left">NULL</td>
+		<td align="left">YES</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">week_begin_date</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">Fecha de inicio de la semana.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">week_begin_date</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">week_begin_date_key</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">Clave de fecha de inicio de la semana.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">week_begin_date_key</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">week_num_in_year</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Número de semana en el año.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">week_num_in_year</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">week_num_overall</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Número de semana en general.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">week_num_overall</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">weekday_flag</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">bit</td>
+		<td align="right" sdval="1" sdnum="15370;">1</td>
+		<td align="left">Bandera de día de la semana (1 si es día de semana, 0 si es fin de semana).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">weekday_flag</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">bit</td>
+		<td align="right" sdval="1" sdnum="15370;">1</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">year</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Año.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">year</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">year_month</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="6" sdnum="15370;">6</td>
+		<td align="left">Año y mes combinados.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">dim_time</td>
+		<td align="left">year_month</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="6" sdnum="15370;">6</td>
+		<td align="left">NULL</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">availability_365</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">bytea</td>
+		<td align="left">NULL</td>
+		<td align="left">Disponibilidad durante 365 días en el año.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">calculated_host_listings_count</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">bytea</td>
+		<td align="left">NULL</td>
+		<td align="left">Recuento de listados de anfitriones calculados.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">date_key</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">Fecha asociada a los datos de hechos.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">host_id</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única del anfitrión (Host ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">id</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única de la característica (Feature ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">id_coordinates</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única de coordenadas (Coordinates ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">id_fact</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única de los hechos (Fact ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">id_neighbourhood</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única del barrio o vecindario (Neighbourhood ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">id_neighbourhood_group</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">character varying</td>
+		<td align="right" sdval="200" sdnum="15370;">200</td>
+		<td align="left">Clave única del grupo de vecindarios o ciudad (Neighbourhood Group ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">id_room</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave única de la habitación (Room ID).</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">id_tiempo</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Clave de fecha (Date Key) para relacionar con la dimensión de tiempo.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">last_review</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">date</td>
+		<td align="left">NULL</td>
+		<td align="left">Fecha de la última reseña.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">minimum_nights</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">bytea</td>
+		<td align="left">NULL</td>
+		<td align="left">Número mínimo de noches.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">number_of_reviews</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">bytea</td>
+		<td align="left">NULL</td>
+		<td align="left">Número de reseñas.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">price</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">integer</td>
+		<td align="right" sdval="32" sdnum="15370;">32</td>
+		<td align="left">Precio del alojamiento.</td>
+		<td align="left">NULL</td>
+	</tr>
+	<tr>
+		<td height="17" align="left">fact_nyc</td>
+		<td align="left">reviews_per_month</td>
+		<td align="left">NULL</td>
+		<td align="left">NO</td>
+		<td align="left">real</td>
+		<td align="right" sdval="24" sdnum="15370;">24</td>
+		<td align="left">Tasa de reseñas mensuales.</td>
+		<td align="left">NULL</td>
+	</tr>
+</tbody>
+</table>
+</body>
+
+</html>
